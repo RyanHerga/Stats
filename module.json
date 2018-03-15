@@ -1,0 +1,15 @@
+{
+    "name": "Stats",
+    "alias": "stats",
+    "description": "Display Statistics for your Virtual Airline. Developed by Zumeweb",
+    "keywords": ["Statistics", "Stats", "Top Pilots"],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Stats\\Providers\\StatsServiceProvider",
+        "Modules\\Stats\\Providers\\EventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
