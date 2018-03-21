@@ -1,5 +1,9 @@
 @extends('stats::layouts.frontend')
 
+@section('title')
+Stats
+@endsection
+
 @section('content')
     <h1>Statistics</h1>
    
