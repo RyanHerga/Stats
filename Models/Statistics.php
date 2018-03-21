@@ -2,7 +2,7 @@
 
 namespace Modules\Stats\Models;
 
-use App\Models\BaseModel;
+use App\Interfaces\Model;
 
 /* We load these so that we can interact with the databases */
 use App\Models\Aircraft as AircraftData;
@@ -11,7 +11,7 @@ use App\Models\Pirep as PirepData;
 use App\Models\User as UserData;
 use App\Models\Flight as ScheduleData;
 
-class Statistics extends BaseModel
+class Statistics extends Model
 {
     /* Get the Number of Aircrafts in the Database */
     public static function getNumOfAircrafts(){

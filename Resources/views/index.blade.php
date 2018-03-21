@@ -28,7 +28,6 @@
                 <th>Total Flight Time Flown</th>
                 <td>{{  floor($TotalFlightTime/60) }}:{{ sprintf("%02d", $TotalFlightTime%60)  }} hrs</td>
             </tr>
-            @if($LongestFlightFlown->first())
             <tr>
                 <th>Longest Flight Flown</th>
                 <td>
@@ -39,8 +38,6 @@
                     by  <a href="{{ route('frontend.profile.show.public', ['id' => $LongestFlightFlown[0]->user()->get()[0]->id]) }}">{{$LongestFlightFlown[0]->user()->get()[0]->name}}</a>
                  </td>
             </tr>
-            @endif
-            @if($ShortestFlightFlown->first())
             <tr>
                 <th>Shortest Flight Flown</th>
                 <td>
@@ -51,7 +48,6 @@
                     by  <a href="{{ route('frontend.profile.show.public', ['id' => $ShortestFlightFlown[0]->user()->get()[0]->id]) }}">{{$ShortestFlightFlown[0]->user()->get()[0]->name}}</a>
                  </td>
             </tr>
-            @endif
             </table>
         </div>
         <div class="col-md-6 col-lg-6 col-sm-12">

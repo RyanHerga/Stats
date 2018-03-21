@@ -2,7 +2,7 @@
 
 namespace Modules\Stats\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Interfaces\Controller;
 use Illuminate\Http\Request;
 use Modules\Stats\Models\Statistics as stats;
 
