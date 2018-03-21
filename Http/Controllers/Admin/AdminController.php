@@ -2,7 +2,7 @@
 
 namespace Modules\Stats\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Interfaces\Controller;
 use Illuminate\Http\Request;
 
 
